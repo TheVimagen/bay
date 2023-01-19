@@ -6,7 +6,7 @@ This script is intended to be ran in a fresh install of Arch linux with no displ
 
 **Run this script as a regular user.**
 ```
-git clone --depth 1 https://gitlab.com/SamDenton/samde.git
+git clone --depth 1 https://github.com/codedsprit/bay.git
 cd bay
 ./bay.sh
 
