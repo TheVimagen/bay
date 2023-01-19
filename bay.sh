@@ -20,7 +20,7 @@ echo "export ZDOTDIR=\"\$HOME\"/.config/zsh" | sudo tee -a /etc/zsh/zshenv
 touch $HOME/.cache/zsh/history
 
 # Clones my dotfiles and puts them in .config
-git clone --depth 1 --separate-git-dir=$HOME/.config/.dots https://gitlab.com/samdenton/dots.git tmpdots
+git clone --depth 1 --separate-git-dir=$HOME/.config/.dots https://gitlab.com/codedsprit/dotfiles.git tmpdots
 rsync --recursive --verbose --exclude '.git' tmpdots/ $HOME/
 rm -rf tmpdots
 /usr/bin/git --git-dir=$HOME/.config/.dots --work-tree=$HOME config --local status.showUntrackedFiles no
